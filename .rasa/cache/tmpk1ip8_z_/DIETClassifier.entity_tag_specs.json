@@ -1,0 +1,28 @@
+[
+  {
+    "tag_name": "entity",
+    "ids_to_tags": {
+      "1": "B-ISBN",
+      "2": "I-ISBN",
+      "3": "L-ISBN",
+      "4": "U-ISBN",
+      "5": "B-nome",
+      "6": "I-nome",
+      "7": "L-nome",
+      "8": "U-nome",
+      "0": "O"
+    },
+    "tags_to_ids": {
+      "B-ISBN": 1,
+      "I-ISBN": 2,
+      "L-ISBN": 3,
+      "U-ISBN": 4,
+      "B-nome": 5,
+      "I-nome": 6,
+      "L-nome": 7,
+      "U-nome": 8,
+      "O": 0
+    },
+    "num_tags": 9
+  }
+]

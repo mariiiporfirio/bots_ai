@@ -1,0 +1,88 @@
+version: "3.1"
+
+rules:
+
+- rule: Quando saudar, vou responder
+  steps:
+  - intent: saudacao
+  - action: utter_saudacao
+
+- rule: Falou o nome, respondo com o meu
+  steps:
+  - intent: meu_nome
+  - action: utter_meu_nome
+
+- rule: Quando pedir recomendacoes
+  steps:
+    - intent: recomendacoes
+    - action: utter_recomendacoes
+
+- rule: Quando fizer uma afirmacao
+  steps:
+    - intent: afirmacao
+    - action: utter_afirmacao
+  
+- rule: Quando agradecer, vou responder
+  steps:
+    - intent: agradecimento
+    - action: utter_agradecimento
+
+- rule: Livro A Empregada
+  steps:
+    - intent: Empregada_Freida_McFadden
+    - action: utter_Empregada_Freida_McFadden
+  
+- rule: Livro Tudo é Rio
+  steps:
+    - intent: Tudo_Rio_Carla_Madeira
+    - action: utter_Tudo_Rio_Carla_Madeira
+
+- rule: Livro A Biblioteca da Meia-Noited
+  steps:
+    - intent: Biblioteca_Meia_Noite_Matt_Haig
+    - action: utter_Biblioteca_Meia_Noite_Matt_Haig
+
+- rule: Livro A Paciente Silenciosa
+  steps:
+    - intent: Paciente_Silenciosa_Alex_Michaelides
+    - action: utter_Paciente_Silenciosa_Alex_Michaelides
+
+- rule: Livro Jantar Secreto
+  steps:
+    - intent: Jantar_Secreto_Raphael_Montes
+    - action: utter_Jantar_Secreto_Raphael_Montes
+
+- rule: Livro A Cabeça do Santo
+  steps:
+    - intent: Cabeca_Santo_Socorro_Acioli
+    - action: utter_Cabeca_Santo_Socorro_Acioli
+
+- rule: Livro O Homem de Giz
+  steps:
+    - intent: Homem_Giz_CJ_Tudor
+    - action: utter_Homem_Giz_CJ_Tudor
+
+- rule: Livro O Conto da Aia
+  steps:
+    - intent: Conto_Aia_Margaret_Atwood
+    - action: utter_Conto_Aia_Margaret_Atwood
+
+- rule: Livro Peso_Passaro_Morto_Aline_Bei
+  steps:
+    - intent: Peso_Passaro_Morto_Aline_Bei
+    - action: utter_Peso_Passaro_Morto_Aline_Bei
+
+- rule: Livro Todas as Cores da Escuridão
+  steps:
+    - intent: Todas_Cores_Escuridao_Chris_Whitaker
+    - action: utter_Todas_Cores_Escuridao_Chris_Whitaker
+
+# - rule: Buscar livro por ISBN
+#   steps:
+#     - intent: buscar_isbn
+#     - action: action_buscar_por_isbn
+
+# - rule: Quando informar a idade
+#   steps:
+#     - intent: idade
+#     - action: utter_idade

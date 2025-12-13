@@ -1,0 +1,102 @@
+version: "3.1"
+
+intents:
+  - saudacao
+  - meu_nome
+  - recomendacoes
+  - afirmacao
+  - agradecimento
+  - Empregada_Freida_McFadden
+  - Tudo_Rio_Carla_Madeira
+  - Biblioteca_Meia_Noite_Matt_Haig
+  - Paciente_Silenciosa_Alex_Michaelides
+  - Jantar_Secreto_Raphael_Montes
+  - Cabeca_Santo_Socorro_Acioli
+  - Homem_Giz_CJ_Tudor
+  - Conto_Aia_Margaret_Atwood
+  - Peso_Passaro_Morto_Aline_Bei
+  - Todas_Cores_Escuridao_Chris_Whitaker
+  # - buscar_isbn
+  # - idade
+  
+entities:
+ - nome
+#  - ISBN
+#  - idade
+
+slots:
+  nome:
+    type: any
+    mappings:
+    - type: from_entity
+      entity: nome
+
+  # ISBN:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: ISBN
+
+  # idade:
+  #   type: text
+  #   mappings:
+  #     - type: from_entity
+  #       entity: idade
+
+# actions:
+#   - action_buscar_por_isbn
+
+responses:
+
+  utter_saudacao:
+  - text: "Olá, qual o seu nome?"
+
+  utter_meu_nome:
+  - text: "Opa, prazer {nome} como posso te ajudar?"
+  
+  utter_recomendacoes:
+  - text: "Hum, acho que não conheço esse livro. Para mais recomendações você pode buscar no ChatGPT ou no Google."
+
+  utter_afirmacao:
+  - text: "Ajude em algo mais?"
+
+  utter_agradecimento:
+  - text: "Imagina, tenha um bom dia !"
+
+  utter_Empregada_Freida_McFadden:
+  - text: "Acredito que esteja falando do livro A Empregada de Freida McFadden."
+
+  utter_Tudo_Rio_Carla_Madeira:
+  - text: "Acredito que esteja falando do livro Tudo é Rio de Carla Madeira."
+
+  utter_Biblioteca_Meia_Noite_Matt_Haig:
+  - text: "Acredito que esteja falando do livro A Biblioteca da Meia-Noite do Matt Haig."
+
+  utter_Paciente_Silenciosa_Alex_Michaelides:
+  - text: "Acredito que esteja falando do livro A Paciente Silenciosa do Alex Michaelides"
+
+  utter_Jantar_Secreto_Raphael_Montes:
+  - text: "Acredito que esteja falando do livro Jantar Secreto do Raphael Montes"
+
+  utter_Cabeca_Santo_Socorro_Acioli:
+  - text: "Acredito que esteja falando do livro A Cabeça da Santo de Socorro Acioli"
+
+  utter_Homem_Giz_CJ_Tudor:
+  - text: "Acredito que esteja falando do livro O Homem de Giz do C.J. Tudor"
+
+  utter_Conto_Aia_Margaret_Atwood:
+  - text: "Acredito que esteja falando do livro O Conto da Aia da Margaret Atwood"
+
+  utter_Peso_Passaro_Morto_Aline_Bei:
+  - text: "Acredito que esteja falando do livro O Peso do Pássaro Morto da Aline Bei"
+
+  utter_Todas_Cores_Escuridao_Chris_Whitaker:
+  - text: "Acredito que esteja falando do livro Todas as Cores da Escuridão do Chris Whitaker"
+
+  # utter_idade:
+  # - text: "{idade}, legal !"
+
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

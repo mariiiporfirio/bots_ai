@@ -1,0 +1,61 @@
+{
+  "type": "MaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "A_Empregada_Freida_McFadden": 0,
+        "Tudo_Rio_Carla_Madeira": 1,
+        "afirmacao": 2,
+        "agradecimento": 3,
+        "back": 4,
+        "idade": 5,
+        "meu_nome": 6,
+        "mood_saudacao": 7,
+        "negacao": 8,
+        "nlu_fallback": 9,
+        "out_of_scope": 10,
+        "possaudacao": 11,
+        "recomendacoes": 12,
+        "restart": 13,
+        "saudacao": 14,
+        "session_start": 15
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_A_Empregada_Freida_McFadden": 13,
+        "utter_Tudo_Rio_Carla_Madeira": 14,
+        "utter_agradecimento": 15,
+        "utter_bem": 16,
+        "utter_idade": 17,
+        "utter_meu_nome": 18,
+        "utter_negacao": 19,
+        "utter_recomendacoes": 20,
+        "utter_saudacao": 21
+      },
+      "entities": {
+        "idade": 0,
+        "nome": 1
+      },
+      "slots": {
+        "idade_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

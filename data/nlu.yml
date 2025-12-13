@@ -1,0 +1,434 @@
+version: "3.1"
+
+nlu:
+- intent: saudacao
+  examples: |
+      - oi
+      - olá
+      - e aí
+      - fala aí
+      - beleza
+      - bom dia
+      - boa tarde
+      - boa noite
+      - opa
+      - oie
+      - fala
+      - oi oi
+      - salve
+      - bom te ver!
+      - oiii
+      - saudações!
+      - hey
+      - alô
+      - bom estar aqui
+
+- intent: meu_nome
+  examples: |
+    - meu nome é [Mariana](nome)
+    - eu sou a [Marina](nome)
+    - me chamo [Ana](nome)
+    - pode me chamar de [Carol](nome)
+    - eu me chamo [Fernanda](nome)
+    - pode me chamar de [Juliana](nome)
+    - me chamo [Sofia](nome)
+    - sou a [Letícia](nome)
+    - meu nome é [Camila](nome)
+    - eu sou a [Larissa](nome)
+    - me chamam de [Beatriz](nome)
+    - me apresento como [Isabela](nome)
+    - atendo pelo nome de [Paula](nome)
+    - pode me tratar como [Tatiane](nome)
+    - sou conhecida como [Renata](nome)
+    - eu me chamo [Gabriela](nome)
+    - meu nome é [Aline](nome)
+    - pode me chamar de [Patrícia](nome)
+    - me identifico como [Débora](nome)
+    - me chamo [Vanessa](nome)
+    
+- intent: recomendacoes
+  examples: |
+    - Me recomenda um livro bom?
+    - Qual série você acha que eu deveria ler?
+    - Tem algum livro bom para ouvir hoje?
+    - O que você me indica para ler?
+    - Me sugere algo interessante para ler?
+    - Você pode recomendar um livro?
+    - Tem algum livro legal para ler?
+    - Que tipo de livro você recomenda?
+    - Me dá uma dica de série de livro?
+
+- intent: afirmacao
+  examples: |
+      - sim
+      - claro
+      - claro que sim
+      - com certeza
+      - de boa
+      - otimo
+      - ok
+      - to indo
+      - joia
+      - acho que estou
+      - isso
+      - isso mesmo
+      - é
+      - é esse mesmo
+      - correto
+      - s
+
+- intent: agradecimento
+  examples: |
+    - Muito obrigado!
+    - Obrigada pela ajuda.
+    - Valeu, até mais!
+    - Agradeço muito!
+    - Obrigado por tudo.
+    - Obrigada, você foi muito útil.
+    - Valeu mesmo!
+    - Muito obrigado pela atenção.
+    - Agradeço pela sua ajuda.
+    - Obrigada, até a próxima!
+    - Obrigado, tchau!
+    - Obrigada, bom trabalho.
+    - Muito obrigado, fico grato.
+    - Obrigada por tudo que fez.
+    - Valeu, foi ótimo falar com você.
+    - Não.
+    - não não
+    - n
+    - Não, muito Obrigada.
+    - Não, obrigada.
+
+
+- intent: Empregada_Freida_McFadden
+  examples: |
+    - Millie aceita um emprego como empregada doméstica numa casa de luxo e descobre segredos obscuros da família.
+    - 9786555352256
+    - Tem algum livro com o ISBN 9786555352256?
+    - Qual livro tem esse código ISBN: 9786555352256?
+    - Conhece um livro sobre empregada doméstica que tem um suspense envolvendo segredos?
+    - Estou procurando um livro que fale sobre uma mulher que trabalha como empregada e descobre mistérios.
+    - Você pode me indicar um livro com suspense sobre uma empregada?
+    - Tem livro com uma história de suspense que se passa na casa de uma família rica?
+    - Qual o nome do livro que tem o código ISBN 9786555352256?
+    - Estou buscando um thriller psicológico com uma empregada como personagem principal.
+    - Você conhece um livro recente com cerca de 320 páginas que é um suspense envolvendo segredos?
+    - Me indica um livro com suspense e mistério que tenha a palavra “empregada” no título.
+    - Tem um livro com um mistério doméstico que eu posso procurar pelo código ISBN?
+    - Estou procurando um livro sobre segredos e suspense numa casa de luxo, sabe qual é?
+    - Qual livro tem a sinopse sobre uma empregada que descobre segredos obscuros?
+    - Procuro um livro com uma história de suspense que envolva uma empregada e uma família rica.
+    - Tem como eu encontrar um livro pelo código ISBN 9786555352256 para comprar ou ler?
+    - 9786555352256
+    - ISBN 9786555352256
+    - Qual é o livro com o código 9786555352256?
+    - O livro com o ISBN 9786555352256, você conhece?
+    - Me diga que livro tem o número 9786555352256.
+    - Tem algum livro com o código 9786555352256?
+    - Você pode me falar o título com ISBN 9786555352256?
+    - Que obra tem o ISBN 9786555352256?
+    - Estou procurando o livro com número 9786555352256.
+    - Achei esse ISBN 9786555352256, qual é o livro?
+
+- intent: Tudo_Rio_Carla_Madeira
+  examples: |
+    - Romance sobre um triângulo amoroso marcado por tragédias e ciúmes em uma pequena cidade.
+    - Tem algum livro com o ISBN 9786555842073?
+    - Qual livro tem esse código ISBN: 9786555842073?
+    - Conhece um livro que fala sobre um triângulo amoroso marcado por tragédias?
+    - Estou procurando um livro que conte a história de um casal com problemas por ciúmes doentios.
+    - Você pode me indicar um romance que envolva um triângulo amoroso e conflitos familiares?
+    - Tem livro com uma trama de drama e romance ambientada numa pequena cidade?
+    - Qual o nome do livro com o código ISBN 9786555842073?
+    - Estou buscando um livro brasileiro que fale sobre amor, perda e ciúme.
+    - Você conhece um livro com cerca de 210 páginas que fala de relacionamentos complicados?
+    - Me indica um livro de romance com drama que tenha a palavra “Rio” no título.
+    - Tem um livro sobre triângulo amoroso e tragédias que eu posso procurar pelo ISBN?
+    - Estou procurando um livro que fale da história de Dalva, Venâncio e Lucy, sabe qual é?
+    - Qual livro tem a sinopse sobre um casal que enfrenta uma perda trágica e um triângulo amoroso?
+    - Procuro um livro que tenha um enredo forte sobre ciúmes e amor na cidade pequena.
+    - Tem como eu encontrar um livro pelo código ISBN 9786555842073 para comprar ou ler?
+    - 9786555842073
+    - ISBN 9786555842073
+    - Qual é o livro com o código 9786555842073?
+    - Esse número 9786555842073 corresponde a qual título?
+    - Sabe que livro tem ISBN 9786555842073?
+    - O livro com número 9786555842073 é qual?
+    - Me diga o nome do livro com código 9786555842073.
+    - Estou pesquisando um livro com ISBN 9786555842073.
+    - Qual livro está vinculado ao código 9786555842073?
+    - 9786555842073 é o código de qual livro?
+
+- intent: Biblioteca_Meia_Noite_Matt_Haig
+  examples: |
+    - Nora encontra uma biblioteca mágica entre a vida e a morte onde cada livro mostra uma vida alternativa que ela poderia ter vivido.
+    - 9786555602883
+    - Tem algum livro com o ISBN 9786555602883?
+    - Qual livro tem esse código ISBN: 9786555602883?
+    - Conhece um romance que fala sobre uma mulher que revisita todas as vidas que poderia ter vivido?
+    - Estou procurando um livro sobre escolhas de vida e arrependimentos, com uma biblioteca entre realidades.
+    - Você pode me indicar um livro que mistura fantasia e reflexão sobre o sentido da vida?
+    - Tem livro que se passa em uma biblioteca mágica entre a vida e a morte?
+    - Qual o nome do livro que tem o código ISBN 9786555602883?
+    - Estou buscando uma ficção com uma personagem que entra em uma biblioteca para reavaliar as decisões da sua vida.
+    - Você conhece um livro recente com cerca de 300 páginas que envolve vidas alternativas e reflexão existencial?
+    - Me indica um romance com elementos de fantasia que tenha uma biblioteca como ponto central da história?
+    - Tem um livro sobre uma mulher que está entre a vida e a morte e visita versões alternativas da sua vida?
+    - Estou procurando um livro que mistura fantasia suave com questões filosóficas sobre escolhas e arrependimentos.
+    - Qual é o livro onde a protagonista acessa uma biblioteca que mostra todas as vidas que ela poderia ter vivido?
+    - Nora Seed se vê em uma biblioteca misteriosa entre a vida e a morte. Cada livro representa uma vida que ela poderia ter vivido. Ao revisitar essas possibilidades, Nora repensa o significado do arrependimento e da felicidade.
+    - 9786555602883
+    - Qual livro é identificado pelo ISBN 9786555602883?
+    - ISBN 9786555602883, que livro é?
+    - Sabe o nome do livro com código 9786555602883?
+    - 9786555602883 é o número de qual livro?
+    - Esse ISBN 9786555602883 corresponde a que livro?
+    - Tem algum livro com o número 9786555602883?
+    - Quero saber qual é o título com o ISBN 9786555602883.
+    - O livro com código 9786555602883, qual é?
+    - Pode me dizer que livro tem o ISBN 9786555602883?
+
+- intent: Paciente_Silenciosa_Alex_Michaelides
+  examples: |
+    - Alicia Berenson, uma pintora de sucesso, mata o marido e passa a viver em silêncio absoluto. Um psicoterapeuta obcecado com o caso tenta descobrir a verdade por trás desse mistério, revelando segredos profundos e inesperados.
+    - Alicia Berenson é uma pintora que mata o marido e depois nunca mais fala uma palavra. Sabe qual é esse livro?
+    - 9788580419479
+    - Tem algum livro com o ISBN 9788580419479?
+    - Qual livro tem esse código ISBN: 9788580419479?
+    - Você conhece um livro de suspense psicológico onde a protagonista para de falar após cometer um crime?
+    - Estou procurando um thriller em que uma mulher mata o marido e depois fica em silêncio total.
+    - Me indica um livro com suspense envolvendo uma paciente que se recusa a falar?
+    - Tem um thriller onde um psicoterapeuta tenta entender o que levou uma mulher a matar o marido e se calar?
+    - Qual o nome do livro que tem o código ISBN 9788580419479?
+    - Estou buscando um suspense psicológico com reviravoltas e uma protagonista que não fala.
+    - Você conhece um livro com cerca de 350 páginas onde a paciente é também a principal suspeita de um assassinato?
+    - Me recomenda um thriller envolvente com uma protagonista que esconde um grande segredo em silêncio?
+    - Tem um livro onde a única testemunha de um assassinato é também a principal suspeita, e ela não diz nada?
+    - Estou procurando um livro em que um terapeuta tenta descobrir o passado de uma paciente que não fala.
+    - Qual é o livro sobre uma mulher que comete um crime chocante e depois nunca mais fala uma palavra?
+    - 9788580419479
+    - ISBN 9788580419479
+    - Qual livro corresponde ao ISBN 9788580419479?
+    - Você sabe qual livro tem o número 9788580419479?
+    - Estou procurando o livro com código 9788580419479.
+    - Esse número 9788580419479 é de qual livro?
+    - Que título é esse com ISBN 9788580419479?
+    - 9788580419479 é o código de qual livro?
+    - Tem livro com ISBN 9788580419479?
+    - Qual obra é identificada por 9788580419479?
+
+- intent: Jantar_Secreto_Raphael_Montes
+  examples: |
+    - Quatro amigos que moram em Copacabana começam a realizar jantares clandestinos com pratos polêmicos para driblar problemas financeiros. A trama mistura horror, crítica social e gastronomia de forma ousada.
+    - Você conhece um livro brasileiro onde quatro amigos fazem jantares clandestinos com um ingrediente chocante?
+    - 9788501077230
+    - Qual livro tem o ISBN 9788501077230?
+    - Tem algum livro com o código ISBN: 9788501077230?
+    - Qual é o romance policial em que amigos servem pratos misteriosos para a elite carioca?
+    - Estou procurando um thriller nacional que envolva segredos, jantares ilegais e um toque de horror.
+    - Tem livro que mistura gastronomia extrema, suspense e crítica social no Rio de Janeiro?
+    - Você pode me indicar um livro sobre um grupo de amigos que se envolve em algo muito macabro por dinheiro?
+    - Me ajuda a lembrar o nome do livro em que os protagonistas organizam jantares secretos com um cardápio sinistro?
+    - Qual livro se passa em Copacabana e envolve um grupo de jovens que cria um negócio bizarro de culinária?
+    - Existe um thriller brasileiro com tema gastronômico e um segredo obscuro por trás de jantares exclusivos?
+    - Tem algum livro onde os personagens servem pratos ilegais para clientes ricos?
+    - Estou procurando um suspense com elementos de horror e crítica social ambientado no Brasil.
+    - Qual é o livro de Raphael Montes que fala sobre jantares secretos e ingredientes polêmicos?
+    - Você conhece um livro nacional que mistura suspense, crime e alta gastronomia com um toque macabro?
+    - 9788501077230
+    - ISBN 9788501077230
+    - O que significa o código 9788501077230?
+    - Qual é o livro com o número 9788501077230?
+    - Você conhece o livro com ISBN 9788501077230?
+    - 9788501077230 é o ISBN de qual livro?
+    - Me fale o título com código 9788501077230.
+    - Achei o número 9788501077230, qual é o livro?
+    - O livro com o código 9788501077230 é qual?
+    - Que livro corresponde ao ISBN 9788501077230?
+
+- intent: Cabeca_Santo_Socorro_Acioli
+  examples: |
+    - Samuel vai parar em uma cidade fictícia do interior do Ceará, onde passa a viver dentro da cabeça de uma estátua de santo. Lá, começa a ouvir orações e mergulha numa jornada de autoconhecimento, mistério e religiosidade.
+    - Qual é o livro brasileiro em que o personagem começa a ouvir orações dentro da cabeça de uma estátua de santo?
+    - 9788535925188
+    - Tem algum livro com o ISBN 9788535925188?
+    - Qual livro tem esse código ISBN: 9788535925188?
+    - Estou procurando um romance com realismo mágico ambientado no sertão nordestino.
+    - Você conhece um livro onde o protagonista vive dentro da cabeça de um santo e ouve vozes?
+    - Tem algum livro nacional que mistura religião, crítica social e elementos fantásticos?
+    - Me indica uma obra brasileira com uma história mística sobre fé e milagres no interior do Ceará?
+    - Qual o nome do livro em que um rapaz vai morar na cabeça de uma estátua e passa a ouvir orações?
+    - Estou buscando um romance contemporâneo com um toque de realismo mágico nordestino.
+    - Você conhece um livro onde a religiosidade popular é retratada de forma poética e simbólica?
+    - Existe um romance nacional sobre um jovem que vive dentro de uma imagem religiosa gigante?
+    - Me recomenda um livro que una misticismo, crítica social e cultura nordestina?
+    - Qual é o livro de Socorro Acioli que fala sobre um homem ouvindo orações dentro da cabeça de um santo?
+    - Tem alguma história literária onde a espiritualidade se manifesta de forma surreal e simbólica?
+    - 9788535925188
+    - ISBN 9788535925188
+    - Código do livro: 9788535925188
+    - Sabe qual é o livro com ISBN 9788535925188?
+    - Esse número 9788535925188 corresponde a qual obra?
+    - Me diga que livro tem o número 9788535925188.
+    - 9788535925188 é o número de qual título?
+    - Qual título tem o código 9788535925188?
+    - Estou procurando um livro com o número 9788535925188.
+    - Tem algum livro com o código 9788535925188?
+
+- intent: Homem_Giz_CJ_Tudor
+  examples: |
+    - Um grupo de amigos passa a se comunicar por desenhos de giz, até que um deles os leva a um corpo desmembrado. Anos depois, os mesmos sinais voltam a aparecer. Um suspense sombrio com estilo nostálgico, à la Stephen King.
+    - Qual é o livro onde crianças se comunicam com desenhos de giz e descobrem um corpo desmembrado?
+    - 9788501115024
+    - Qual livro tem o ISBN 9788501115024?
+    - Tem algum livro com o código ISBN: 9788501115024?
+    - Estou procurando um thriller com um grupo de amigos que encontram mensagens em giz e acabam envolvidos em um assassinato.
+    - Você conhece um suspense onde os personagens usavam desenhos para se comunicar na infância, e algo terrível acontece?
+    - Qual é o nome do livro com mensagens em giz que levam a um mistério do passado?
+    - Me indica um livro com narrativa dividida entre passado e presente envolvendo um crime e símbolos infantis?
+    - Existe um thriller psicológico que lembra "It" ou "Stranger Things", com crianças e um assassinato antigo?
+    - Estou buscando um livro em que os personagens recebem pistas estranhas feitas com giz.
+    - Qual é o livro com uma história de suspense que se passa numa cidade pequena e envolve segredos enterrados?
+    - Tem algum livro onde desenhos de giz revelam um crime cometido anos atrás?
+    - Qual livro fala sobre um grupo de amigos que reencontra o passado por meio de símbolos e traumas antigos?
+    - Você conhece um livro com cerca de 300 páginas sobre mistérios do passado que voltam à tona na vida adulta?
+    - Me ajuda a lembrar o nome de um livro em que um grupo de amigos encontra o corpo de uma garota após seguir desenhos de giz?
+    - 9788501115024
+    - ISBN 9788501115024
+    - O número 9788501115024 é de qual livro?
+    - Que livro tem o ISBN 9788501115024?
+    - Estou atrás do livro com código 9788501115024.
+    - Qual livro tem esse número: 9788501115024?
+    - Código 9788501115024 corresponde a qual título?
+    - Me fale o título com ISBN 9788501115024.
+    - O que é o código 9788501115024?
+    - Esse ISBN 9788501115024 se refere a que livro?
+
+- intent: Conto_Aia_Margaret_Atwood
+  examples: |
+    - Na República de Gilead, as mulheres são divididas por funções rígidas. Offred é uma aia, forçada a gerar filhos para os líderes do regime. A obra denuncia a opressão de gênero em um cenário distópico e profundamente simbólico.
+    - Qual é o livro distópico onde as mulheres férteis são forçadas a ter filhos para os líderes do governo?
+    - 9788535929636
+    - Tem algum livro com o código ISBN: 9788535929636?
+    - Você conhece uma distopia feminista com uma personagem chamada Offred?
+    - Estou procurando um livro sobre uma sociedade teocrática em que as mulheres perdem todos os direitos.
+    - Qual livro se passa numa realidade distópica chamada Gilead?
+    - Me indica um romance que critique o fundamentalismo religioso e a opressão feminina?
+    - Existe um livro onde as mulheres são obrigadas a viver como aias e servir aos comandantes?
+    - Qual é o nome do livro em que mulheres férteis são submetidas a um regime autoritário?
+    - Tem um livro onde a sociedade divide rigidamente os papéis das mulheres e controla sua reprodução?
+    - Estou buscando uma ficção distópica com foco em gênero, controle e resistência.
+    - Qual livro mostra uma mulher tentando sobreviver em um regime totalitário religioso?
+    - Você conhece um livro onde uma mulher é forçada a se calar, obedecer e ter filhos contra sua vontade?
+    - Qual é o romance que inspirou a série The Handmaid’s Tale?
+    - Estou procurando um livro que mostra como seria o mundo se o extremismo religioso dominasse o Estado.
+    - 9788535929636
+    - ISBN 9788535929636
+    - Qual livro tem o número 9788535929636?
+    - Você conhece o livro com código 9788535929636?
+    - O que é o livro com ISBN 9788535929636?
+    - Código 9788535929636 se refere a qual obra?
+    - Qual título é vinculado ao ISBN 9788535929636?
+    - 9788535929636 é de qual livro?
+    - Estou buscando o título com código 9788535929636.
+    - Esse número 9788535929636 indica que livro?
+
+- intent: Peso_Passaro_Morto_Aline_Bei
+  examples: |
+    - A vida de uma mulher dos 8 aos 52 anos, marcada por perdas e dores cotidianas. Escrito em forma de prosa poética, é um retrato delicado e sensível sobre amadurecimento, luto e sobrevivência emocional.
+    - Qual é o livro em que acompanhamos a vida de uma mulher dos 8 aos 52 anos por meio de uma narrativa poética?
+    - 9788555340736
+    - Tem algum livro com o ISBN: 9788555340736?
+    - Você conhece um romance escrito em prosa poética que fala sobre perdas ao longo da vida?
+    - Estou procurando um livro sensível e lírico sobre amadurecimento e dor.
+    - Me indica um romance que retrata as fases da vida de uma mulher marcada por traumas e lutos?
+    - Qual é o livro nacional contemporâneo que mistura poesia e drama existencial?
+    - Tem algum livro escrito com estrutura poética que aborda temas como morte, infância e solidão?
+    - Qual livro fala de forma delicada sobre as dores que carregamos ao longo da vida?
+    - Você conhece um livro onde a protagonista atravessa perdas e dores profundas desde a infância?
+    - Estou buscando um romance emocional e literário com linguagem poética.
+    - Qual é o livro que fala sobre o peso das experiências e dos silêncios ao longo da vida?
+    - Me recomenda um livro brasileiro contemporâneo com estilo poético e narrativo incomum?
+    - Tem alguma obra com narrativa lírica que trata da passagem do tempo e da dor como temas centrais?
+    - Qual é o livro escrito por Aline Bei que virou referência na literatura contemporânea brasileira?
+    - 9788555340736
+    - ISBN 9788555340736
+    - Qual livro tem esse ISBN: 9788555340736?
+    - Sabe que livro tem o código 9788555340736?
+    - Esse número 9788555340736 é de qual obra?
+    - Estou atrás do livro com código 9788555340736.
+    - Que livro tem o código 9788555340736?
+    - 9788555340736 corresponde a que título?
+    - O livro com ISBN 9788555340736 é qual?
+    - O que representa o número 9788555340736?
+
+- intent: Todas_Cores_Escuridao_Chris_Whitaker
+  examples: |
+    - Na pequena cidade de Monta Clare (Missouri, anos 1970), dezenas de meninas desaparecem misteriosamente. Quando a filha de uma família influente some, um jovem chamado Patch arrisca tudo para resgatá-la — desencadeando uma investigação cheia de segredos sombrios e reviravoltas emocionantes.
+    - Qual é o livro que se passa nos anos 1970 em uma cidade americana onde meninas começam a desaparecer?
+    - 9786555656671
+    - Tem algum livro com o código ISBN 9786555656671?
+    - Você conhece um romance de mistério que acompanha o desaparecimento de garotas em uma cidade pequena?
+    - Estou procurando um suspense com ambientação nostálgica e um jovem protagonista que tenta salvar uma garota.
+    - Qual é o livro em que um adolescente enfrenta perigos para encontrar uma garota desaparecida em Missouri?
+    - Me indica um thriller recente com toques emocionais e uma cidade cheia de segredos?
+    - Qual o nome do livro em que um garoto chamado Patch tenta desvendar uma série de desaparecimentos?
+    - Tem algum livro que mistura drama e mistério com ambientação nos Estados Unidos dos anos 70?
+    - Você conhece um livro onde o personagem principal investiga um crime envolvendo famílias poderosas da cidade?
+    - Estou buscando um livro com mais de 500 páginas, denso, com narrativa envolvente e suspense emocional.
+    - Qual é o livro novo do Chris Whitaker que fala sobre amor, perda e mistério?
+    - Tem um romance policial que começa com o desaparecimento de uma menina e vai muito além do crime?
+    - Me ajuda a lembrar o nome de um livro recente com uma cidade cheia de sombras e uma investigação juvenil?
+    - Você pode me indicar um suspense onde um garoto comum se torna herói numa história sobre coragem e redenção?
+    - 9786555656671
+    - ISBN 9786555656671
+    - Qual livro corresponde ao código 9786555656671?
+    - Que obra tem o ISBN 9786555656671?
+    - Você conhece o livro com número 9786555656671?
+    - Esse número 9786555656671 é referente a qual livro?
+    - Livro com ISBN 9786555656671, qual é?
+    - O código 9786555656671 é de qual título?
+    - Estou tentando lembrar o nome com ISBN 9786555656671.
+    - Pode me dizer o livro com ISBN 9786555656671?
+
+# - intent: buscar_isbn
+#   examples: |
+#     - Quero o livro com ISBN [9781234567897](ISBN)
+#     - Me fala sobre o livro de ISBN [9789876543210](ISBN)
+#     - Você conhece o livro com ISBN [9781234567897](ISBN)?
+#     - ISBN [9789876543210](ISBN)
+#     - Quero saber sobre o livro com ISBN [9781234567897](ISBN)
+#     - Pode me informar sobre o livro de ISBN [9789876543210](ISBN)?
+#     - Gostaria de detalhes do livro ISBN [9781234567897](ISBN)
+#     - Tem informações sobre o livro com o ISBN [9789876543210](ISBN)?
+#     - Me diga o que sabe sobre o livro ISBN [9781234567897](ISBN)
+#     - Qual livro corresponde ao ISBN [9789876543210](ISBN)?
+#     - Preciso do livro que tem ISBN [9781234567897](ISBN)
+#     - Pode me ajudar com o livro ISBN [9789876543210](ISBN)?
+
+# regex:
+# - name: ISBN
+#   pattern: '[0-9]{13}'
+
+# - regex: idade
+#   examples: |
+#     - \d{1,2}
+
+# - intent: idade
+#   examples: |
+#     - Qual a sua idade [21](idade)?
+#     - Quantos anos você tem [10](idade)?
+#     - Você tem quantos anos [12](idade)?
+#     - Me diga sua idade [12](idade).
+#     - Pode me falar sua idade [12](idade)?
+#     - Quantos anos você tem agora [12](idade)?
+#     - Qual é a sua idade atual [12](idade)?
+#     - Você já tem quantos anos [12](idade)?
+#     - Você é jovem ou velho [12](idade)?
+#     - Me conte sua idade [12](idade).
+#     - Qual sua idade [12](idade)?
+#     - Quantos anos você faz [12](idade)?
+#     - Você pode dizer sua idade [12](idade)?
+#     - Você é muito velho [12](idade)?
+#     - Quantos anos você possui [12](idade)?

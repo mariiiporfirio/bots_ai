@@ -1,0 +1,59 @@
+{
+  "type": "IntentMaxHistoryTrackerFeaturizer",
+  "state_featurizer": {
+    "action_texts": [],
+    "entity_tag_specs": [],
+    "feature_states": {
+      "intent": {
+        "afirmacao": 0,
+        "agradecimento": 1,
+        "back": 2,
+        "idade": 3,
+        "meu_nome": 4,
+        "mood_saudacao": 5,
+        "negacao": 6,
+        "nlu_fallback": 7,
+        "out_of_scope": 8,
+        "possaudacao": 9,
+        "recomendacoes": 10,
+        "restart": 11,
+        "saudacao": 12,
+        "session_start": 13,
+        "tempo": 14
+      },
+      "action_name": {
+        "action_listen": 0,
+        "action_restart": 1,
+        "action_session_start": 2,
+        "action_default_fallback": 3,
+        "action_deactivate_loop": 4,
+        "action_revert_fallback_events": 5,
+        "action_default_ask_affirmation": 6,
+        "action_default_ask_rephrase": 7,
+        "action_two_stage_fallback": 8,
+        "action_unlikely_intent": 9,
+        "action_back": 10,
+        "...": 11,
+        "action_extract_slots": 12,
+        "utter_agradecimento": 13,
+        "utter_bem": 14,
+        "utter_idade": 15,
+        "utter_meu_nome": 16,
+        "utter_negacao": 17,
+        "utter_recomendacoes": 18,
+        "utter_saudacao": 19,
+        "utter_tempo": 20
+      },
+      "entities": {
+        "idade": 0,
+        "nome": 1
+      },
+      "slots": {
+        "idade_0": 0
+      },
+      "active_loop": {}
+    }
+  },
+  "remove_duplicates": true,
+  "max_history": 5
+}

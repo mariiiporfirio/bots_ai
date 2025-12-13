@@ -1,0 +1,40 @@
+{
+  "lookup": {
+    "rules": {
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}]": "utter_A_Empregada_Freida_McFadden",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}, {\"prev_action\": {\"action_name\": \"utter_A_Empregada_Freida_McFadden\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"idade\"}}]": "utter_idade",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"idade\"}}, {\"prev_action\": {\"action_name\": \"utter_idade\"}, \"user\": {\"intent\": \"idade\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}]": "utter_saudacao",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"saudacao\"}}, {\"prev_action\": {\"action_name\": \"utter_saudacao\"}, \"user\": {\"intent\": \"saudacao\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meu_nome\"}}]": "utter_meu_nome",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meu_nome\"}}, {\"prev_action\": {\"action_name\": \"utter_meu_nome\"}, \"user\": {\"intent\": \"meu_nome\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tempo\"}}]": "utter_tempo",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tempo\"}}, {\"prev_action\": {\"action_name\": \"utter_tempo\"}, \"user\": {\"intent\": \"tempo\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recomendacoes\"}}]": "utter_recomendacoes",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recomendacoes\"}}, {\"prev_action\": {\"action_name\": \"utter_recomendacoes\"}, \"user\": {\"intent\": \"recomendacoes\"}}]": "action_listen",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agradecimento\"}}]": "utter_agradecimento",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agradecimento\"}}, {\"prev_action\": {\"action_name\": \"utter_agradecimento\"}, \"user\": {\"intent\": \"agradecimento\"}}]": "action_listen"
+    },
+    "rule_only_slots": [],
+    "rule_only_loops": [],
+    "rules_for_loop_unhappy_path": {},
+    "rules_not_in_stories": [
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"idade\"}}, {\"prev_action\": {\"action_name\": \"utter_idade\"}, \"user\": {\"intent\": \"idade\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tempo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"idade\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}, {\"prev_action\": {\"action_name\": \"utter_A_Empregada_Freida_McFadden\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recomendacoes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agradecimento\"}}, {\"prev_action\": {\"action_name\": \"utter_agradecimento\"}, \"user\": {\"intent\": \"agradecimento\"}}]",
+      "predicting default action with intent session_start",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meu_nome\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"recomendacoes\"}}, {\"prev_action\": {\"action_name\": \"utter_recomendacoes\"}, \"user\": {\"intent\": \"recomendacoes\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"meu_nome\"}}, {\"prev_action\": {\"action_name\": \"utter_meu_nome\"}, \"user\": {\"intent\": \"meu_nome\"}}]",
+      "predicting default action with intent restart",
+      "predicting default action with intent back",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"tempo\"}}, {\"prev_action\": {\"action_name\": \"utter_tempo\"}, \"user\": {\"intent\": \"tempo\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"A_Empregada_Freida_McFadden\"}}]",
+      "[{\"prev_action\": {\"action_name\": \"action_listen\"}, \"user\": {\"intent\": \"agradecimento\"}}]"
+    ]
+  }
+}

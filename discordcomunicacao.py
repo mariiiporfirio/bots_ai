@@ -1,5 +1,5 @@
 import discord, httpx
-TOKEN = "MTM4NDg3NzE4NDQxNzUzMzk3Mg.GutZ2S.ldMaTNByXSaEJ8wTrNS2_oDWBERWLjs9OfZu-k"
+TOKEN = "Inserir token"
 RASA = "http://localhost:5005/webhooks/rest/webhook"
 intencao = discord.Intents.default()
 intencao.messages = True
